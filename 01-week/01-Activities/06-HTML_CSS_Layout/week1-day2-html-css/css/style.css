@@ -1,0 +1,54 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	/* went with a sans-serif font to match the mood of the image */
+	font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+	/* padded the body so it has a bit of a "card" look and feel */
+	padding: 10px;
+	line-height: 1.5em;
+	color: rgb(20, 20, 20);
+}
+a:link,
+a:visited {
+	color: #d21034;
+	-webkit-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+}
+a:hover,
+a:active {
+	color: cornflowerblue;
+}
+img {
+	max-width: 100%;
+}
+.content {
+	background-color: rgb(241, 241, 241);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.content > section {
+		flex-basis: 100%;
+}
+section > article {
+	padding: 1rem;
+}
+.title {
+	/* went with a background color that goes with the pic */
+	color: white;
+	background-color: cadetblue;
+	padding: .5rem 1rem;
+	font-size: 2em;
+	display: block;
+	text-align: center;
+	margin: 0;
+}
+@media only screen and (min-width: 600px) {
+	body {
+		padding: 20px;
+	}
+	.content > section {
+		flex: 1;
+	}
+}
